@@ -1,0 +1,12 @@
+export * from './auth.module';
+export * from './auth.service';
+export * from './auth.controller';
+export * from './dto';
+export { PasswordService } from './services/password.service';
+export { TokenService } from './services/token.service';
+export type { JwtPayload, TokenPair } from './services/token.service';
+export * from './guards';
+export { JwtStrategy } from './strategies/jwt.strategy';
+export { GoogleStrategy } from './strategies/google.strategy';
+export type { GoogleUser } from './strategies/google.strategy';
+export * from './otp';
