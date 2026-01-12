@@ -2,7 +2,7 @@
   "name": "server",
   "version": "0.1.0-beta",
   "description": "Smart Contest Alert System",
-  "author": "Yash Kumar Singh",
+  "author": "Shreyash Painuly",
   "private": true,
   "license": "UNLICENSED",
   "scripts": {

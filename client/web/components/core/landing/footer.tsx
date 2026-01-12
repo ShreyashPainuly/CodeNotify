@@ -81,9 +81,9 @@ export function Footer() {
               The ultimate contest tracking platform for competitive programmers. Never miss a round again.
             </p>
             <div className="flex gap-3">
-              <SocialButton href="https://github.com/celestial-0/CodeNotify" iconPath={siGithub.path} label="GitHub" />
-              <SocialButton href="https://x.com/Celestial_Yash" iconPath={siX.path} label="X (Twitter)" />
-              <EmailButton href="mailto:yashkumarsingh@ieee.org" label="Email" />
+              <SocialButton href="https://github.com/ShreyashPainuly/CodeNotify" iconPath={siGithub.path} label="GitHub" />
+              <SocialButton href="https://x.com/TheIcyBearXD" iconPath={siX.path} label="X (Twitter)" />
+              <EmailButton href="mailto:shreyashpainulyog@gmail.com" label="Email" />
             </div>
           </div>
 

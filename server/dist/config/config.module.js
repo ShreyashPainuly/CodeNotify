@@ -45,7 +45,7 @@ exports.ConfigModule = ConfigModule = __decorate([
         imports: [
             config_1.ConfigModule.forRoot({
                 isGlobal: true,
-                envFilePath: '.env.local',
+                envFilePath: ['.env.local', '.env'],
                 validate: validateEnv,
             }),
         ],
