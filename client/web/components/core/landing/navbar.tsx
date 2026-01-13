@@ -70,7 +70,7 @@ export function Navbar() {
               Dashboard
             </Link>
             <Link
-              href="https://celestial-0.github.io/CodeNotify/"
+              href="https://shreyashpainuly.github.io/CodeNotify-dev/"
               className="text-[14px] font-medium text-muted-foreground hover:text-foreground transition-colors"
             >
               Docs
@@ -209,7 +209,7 @@ export function Navbar() {
               Dashboard
             </Link>
             <Link
-              href="https://celestial-0.github.io/CodeNotify/"
+              href="https://shreyashpainuly.github.io/CodeNotify-dev/"
               className="block px-3 py-2 text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-accent/50 rounded-md transition-colors"
               onClick={() => setIsOpen(false)}
             >

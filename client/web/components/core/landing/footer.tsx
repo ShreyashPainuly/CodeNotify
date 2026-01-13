@@ -100,8 +100,8 @@ export function Footer() {
           <FooterSection title="Resources">
             <FooterLink href="/auth/signin">Sign In</FooterLink>
             <FooterLink href="/auth/signup">Get Started</FooterLink>
-            <FooterLink href="https://celestial-0.github.io/CodeNotify/">Documentation</FooterLink>
-            <FooterLink href="https://celestial-0.github.io/CodeNotify/api/overview.html">API Reference</FooterLink>
+            <FooterLink href="https://shreyashpainuly.github.io/CodeNotify-dev/">Documentation</FooterLink>
+            <FooterLink href="https://shreyashpainuly.github.io/CodeNotify-dev/">API Reference</FooterLink>
             <FooterLink href="/community">Community</FooterLink>
           </FooterSection>
 
