@@ -6,27 +6,27 @@ import { ZodValidationPipe } from 'nestjs-zod';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
-  // Enable CORS for frontend
+  // Production-ready CORS
   app.enableCors({
-    origin: [
-      'http://localhost:3001',
-      'http://localhost:3000',
-      'https://code-notify.vercel.app',
-    ],
+    origin: process.env.NODE_ENV === 'production'
+      ? [
+          process.env.FRONTEND_URL,
+          'https://your-domain.vercel.app',
+        ]
+      : [
+          'http://localhost:3000',
+          'http://localhost:3001',
+        ],
     credentials: true,
   });
 
-  // Apply global Zod validation pipe
-  app.useGlobalPipes(new ZodValidationPipe());
+  // Trust proxy (for Railway/Render)
+  const server = app.getHttpAdapter().getInstance();
+  server.set('trust proxy', 1);
 
-  // Apply JWT guard globally to all routes
-  const reflector = app.get(Reflector);
-  app.useGlobalGuards(new JwtAuthGuard(reflector));
 
-  await app.listen(process.env.PORT ?? 8000);
+  const port = process.env.PORT || 3001;
+  await app.listen(port, '0.0.0.0');
+  console.log(`🚀 Server running on port ${port}`);
 }
-
-bootstrap().catch((err) => {
-  console.error('Error starting application:', err);
-  process.exit(1);
-});
+bootstrap();

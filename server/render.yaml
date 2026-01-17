@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: codenotify-api
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npm run start:prod
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3001
+      # Add other env vars in Render dashboard
