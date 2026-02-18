@@ -28,7 +28,7 @@ async function bootstrap() {
   server.set('trust proxy', 1);
 
 
-  const port = process.env.PORT || 3001;
+  const port = process.env.PORT || 8000;
   await app.listen(port, '0.0.0.0');
   console.log(`🚀 Server running on port ${port}`);
 }
